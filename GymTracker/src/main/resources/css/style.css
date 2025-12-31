@@ -1,0 +1,70 @@
+/* GYM TRACKER PREMIUM THEME 
+   Based on Logo Colors: Black #121212 & Gold #D4AF37
+*/
+
+/* Overall Screen Background */
+.root-pane {
+    -fx-background-color: #0a0a0a; /* Very deep dark background */
+}
+
+/* The floating card container */
+.login-card {
+    /* Adding a subtle gold glow shadow behind the card */
+    -fx-effect: dropshadow(three-pass-box, rgba(212, 175, 55, 0.15), 30, 0, 0, 0);
+}
+
+/* --- MATERIAL DESIGN INPUTS (Underline Style) --- */
+/* Matches the reference image style */
+.input-field-material {
+    -fx-background-color: transparent; /* No fill */
+    -fx-background-insets: 0;
+    -fx-border-color: #444444; /* Dark grey inactive underline */
+    -fx-border-width: 0 0 1 0; /* Top Right Bottom Left - Only Bottom has width */
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+    -fx-padding: 10 5 10 5; /* Padding for text spacing */
+}
+
+.input-field-material:focused {
+    -fx-border-color: #D4AF37; /* Active underline becomes Gold */
+    -fx-border-width: 0 0 2 0; /* Make it slightly thicker on focus */
+}
+
+
+/* --- PILL SHAPED BUTTON --- */
+/* Matches the reference image shape, but Gold color */
+.accent-button-pill {
+    -fx-background-color: #D4AF37; /* Metallic Gold */
+    -fx-text-fill: #121212; /* Black text */
+    -fx-background-radius: 50; /* Very high radius makes it perfectly round/pill shape */
+    -fx-cursor: hand;
+}
+
+.accent-button-pill:hover {
+    -fx-background-color: #E5C15D; /* Slightly brighter gold on hover */
+    /* Add a glow effect on hover */
+    -fx-effect: dropshadow(three-pass-box, rgba(212, 175, 55, 0.5), 15, 0, 0, 0);
+}
+
+/* --- LINKS & CHECKBOXES --- */
+.link-label {
+    -fx-cursor: hand;
+}
+.link-label:hover {
+    -fx-text-fill: #E5C15D;
+}
+
+/* Customizing the checkbox to match the dark theme */
+.gold-checkbox .box {
+    -fx-background-color: transparent;
+    -fx-border-color: #555555;
+    -fx-border-radius: 3;
+}
+/* When checked, make the box gold and the checkmark black */
+.gold-checkbox:selected .box {
+     -fx-background-color: #D4AF37;
+     -fx-border-color: #D4AF37;
+}
+.gold-checkbox:selected .mark {
+    -fx-background-color: #121212;
+}

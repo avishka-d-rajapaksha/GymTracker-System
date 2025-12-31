@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane styleClass="root-pane" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gymtracker.controller.AdminVerificationController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" styleClass="login-card">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#252525" height="550.0" width="850.0" />
+            <Polygon fill="#121212" points="0.0, 0.0, 450.0, 0.0, 370.0, 550.0, 0.0, 550.0" />
+
+            <VBox alignment="CENTER" prefHeight="550.0" prefWidth="410.0" spacing="15.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <ImageView fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image><Image url="@logo.png" /></image>
+                  </ImageView>
+                  <Label text="SECURITY CHECK" textFill="#d4af37">
+                     <font><Font name="System Bold" size="28.0" /></font>
+                  </Label>
+                  <Label text="Administrator Authorization Required" textFill="#a1a1a1" />
+               </children>
+            </VBox>
+
+            <VBox alignment="CENTER_LEFT" layoutX="460.0" prefHeight="550.0" prefWidth="340.0" spacing="30.0" AnchorPane.rightAnchor="50.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="Verify Admin" textFill="WHITE">
+                           <font><Font name="System Bold" size="32.0" /></font>
+                        </Label>
+                        <Label text="Please enter Admin credentials to continue." textFill="#a1a1a1" />
+                     </children>
+                  </VBox>
+
+                  <VBox spacing="20.0">
+                     <children>
+                        <TextField fx:id="adminUsernameField" promptText="Admin Username" styleClass="input-field-material" />
+                        <PasswordField fx:id="adminPasswordField" promptText="Admin Password" styleClass="input-field-material" />
+                        <Label fx:id="errorLabel" textFill="#ff4d4d" wrapText="true" />
+                     </children>
+                  </VBox>
+
+                  <VBox spacing="10.0">
+                     <children>
+                        <Button maxWidth="1.7976931348623157E308" onAction="#handleVerifyAdmin" prefHeight="50.0" styleClass="accent-button-pill" text="AUTHORIZE ACCESS" />
+                        <Button maxWidth="1.7976931348623157E308" onAction="#handleCancel" prefHeight="40.0" style="-fx-background-color: transparent; -fx-text-fill: #757575;" text="Cancel" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

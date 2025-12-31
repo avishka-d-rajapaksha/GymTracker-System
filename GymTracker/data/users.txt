@@ -1,0 +1,4 @@
+admin,$2a$10$vI8ZWBxp8X.UfKjG/2YmxeFzF6B6X3W.nN8Xf6.6YmxeFzF6B6X3W,Admin 
+a,$2a$12$yjm4UNUMC5UBdb38eDsLAeG5/C.KlHVqkmagngy8W6br6xztoAn1u,Admin
+aa,$2a$12$Y2Gg29yINkQxHwuz8CdOoOLL7ilVVgZOaSTpNOEQHxNVNDQEGRPVO,Instructor
+admin,$2a$12$Yus64M4B3twPGC8mAIiZ8uQQtd0aUia9zpnHgMGKVVn8O.RE/dR6q,Admin
